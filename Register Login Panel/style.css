@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(34,195,138);
+    background: linear-gradient(0deg, rgba(34,195,138,1) 32%, rgba(253,187,45,1) 100%);
+    position: relative;
+    overflow-x: hidden;
+}
+
+div.regPanel{
+    height: 700px;
+    width: 600px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px gray;
+    transition: .5s;
+}
+
+div.regPanel.hide{
+    left: -100%;
+}
+
+div.regPanel h2{
+    color: rgba(0,0,0,0.7);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+div.regPanel p{
+    color: rgba(0,0,0,0.7);
+    font-size: 30px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+div.regPanel input{
+    width: 60%;
+    height: 35px;
+    text-align: center;
+    font-size: 28px;
+    background: rgba(255,255,255,0.8);
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+div.regPanel button{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+    transition: .2s;
+    font-weight: bold;
+}
+
+div.regPanel button:hover{
+    background: rgba(0,0,0,0.8);
+    color: white;
+}
+
+div.regPanel button.toLogIn{
+    margin-top: 20px;
+    width: 80%;
+}
+
+
+div.loginPanel{
+    height: 500px;
+    width: 500px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px gray;
+    transition: .5s;
+}
+
+div.loginPanel.hide{
+    left: 50%;
+}
+
+div.loginPanel p{
+    color: rgba(0,0,0,0.7);
+    font-size: 30px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+div.loginPanel input{
+    width: 60%;
+    height: 35px;
+    text-align: center;
+    font-size: 28px;
+    background: rgba(255,255,255,0.8);
+    border: none;
+}
+
+div.loginPanel button{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+    transition: .2s;
+    font-weight: bold;
+}
+
+div.loginPanel button:hover{
+    background: rgba(0,0,0,0.8);
+    color: white;
+}
+
+div.loginPanel button.toRegister{
+    margin-top: 20px;
+    width: 80%;
+}
+
+div.result{
+    width: 500px;
+    height: 80px;
+    background: rgba(0,0,0,0.5);
+    top: 1%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+
+div.result.hide{
+    display: none;
+}
+
+div.panel{
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    transition: .5s;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px gray;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+div.panel.active{
+    left: 50%;
+}
+
+div.panel h2{
+    font-size: 40px;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 100px;
+}
+
+div.panel span{
+    color: rgba(253,187,45,1);
+    font-size: 30px;
+    font-weight: 100;
+}
+
+div.panel p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+div.panel button{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+    transition: .3s;
+    font-weight: bold;
+    transition: .2s;
+}
+
+div.panel button:hover{
+    background: rgba(0,0,0,0.8);
+    color: white;
+}
+
+div.label{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%);
+    font-weight: bold;
+}
+
