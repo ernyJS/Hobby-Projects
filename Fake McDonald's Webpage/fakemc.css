@@ -1,0 +1,548 @@
+/* overrall reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* main container */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-X: hidden;
+}
+
+/* main img and cover */
+
+section.img{
+    /* background-image: url(main.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10vh;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 200px;
+    margin-top: 200px; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+section.img div{
+    background: green;
+    height: 50%;
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+}
+
+section.img .banner1{
+    background-image: url(img1.png);
+    transition: .3s;
+}
+
+section.img .banner2{
+    background-image: url(img2.jpg);
+    transition: .3s;
+}
+
+section.img .banner3{
+    background-image: url(img3.jpg);
+    transition: .3s;
+}
+
+section.img .banner4{
+    background-image: url(img4.png);
+    transition: .3s;
+}
+
+.banner1:hover{
+    background-position-x: right;
+}
+
+.banner2:hover{
+    background-position-x: right;
+}
+
+.banner3:hover{
+    background-position-x: right;
+}
+
+.banner4:hover{
+    background-position-x: right;
+}
+
+/* nav container & active class*/
+
+nav{
+    height: 10vh;
+    width: 100%;
+    background: white;
+    /* box-shadow: 0 0 10px black; */
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
+
+nav.active{
+    height: 100vh;
+    z-index: 1;
+    background: rgb(255, 204, 0);
+    color: black;
+}
+
+/* burger button and quit button & active class */
+
+nav div i{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(0, -50%);
+    font-size: 40px;
+    color: rgb(255, 204, 0);
+    cursor: pointer;
+    transition: .3s;
+}
+
+nav div i:hover{
+    color: red;
+    opacity: 0.9;
+}
+
+nav div i.active{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(0, -50%);
+    font-size: 40px;
+    color: rgb(255, 204, 0);
+    cursor: pointer;
+    display: none;
+}
+
+nav div i.fa-times{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(0, -50%);
+    font-size: 40px;
+    color: rgb(255, 204, 0);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+nav div i.fa-times.active{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    transform: translate(0, -50%);
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+    display: block;
+}
+
+/* logo img McDonalds & active class */
+
+nav div.logo{
+    position: absolute;
+    background-image: url(logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20vh;
+    width: 20vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav div.logo.active{
+    display: none;
+}
+
+/* social modul & active class */
+
+nav div.social{
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(0, -50%);
+}
+
+nav div.social.active{
+    position: absolute;
+    top: 5%;
+    left: 78%;
+    transform: translate(0, -50%);
+}
+
+nav div.social i{
+    font-size: 20px;
+    transition: .3s;
+}
+
+nav div.social i:hover{
+    color: red;
+}
+
+nav div.social i.b{
+    margin-left: 25px;
+}
+
+nav div.social i.c{
+    margin-left: 50px;
+}
+
+nav div.social i.d{
+    margin-left: 80px;
+}
+
+/* order button & active class */
+
+nav div.order{
+    position: absolute;
+    top: 50%;
+    left: 84%;
+    transform: translate(0, -50%);
+    background: rgb(255, 204, 0);
+    height: 6vh;
+    width: 15%;
+    border-radius: 50px;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav div.order.active{
+    position: absolute;
+    top: 5%;
+    left: 84%;
+    transform: translate(0, -50%);
+    background: rgb(255, 204, 0);
+    border: 2px solid black;
+    height: 6vh;
+    width: 15%;
+    border-radius: 50px;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav div.order:hover{
+    background: white;
+    border: 2px solid black;
+}
+
+/* input bar & active class */
+nav input{
+    display: none;
+}
+
+nav input.active{
+    position: absolute;
+    left: 50%;
+    top: 2.5%;
+    transform: translate(-50%);
+    display: block;
+    height: 5vh;
+    width: 50%;
+    border-radius: 50px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+::placeholder{
+    opacity: 0.5;
+}
+
+/* menu in active hamburger */
+
+nav section.menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+nav section.menu.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+nav section.menu div{
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+nav section.menu a{
+    color: rgb(255, 204, 0);
+    text-decoration-line: none;
+    font-size: 30px;
+    width: 100%;
+    transition: .3s;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: black;
+}
+
+nav section.menu a:hover{
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+
+/* main section container */
+
+main{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 100%;
+    transition: .5s;
+}
+
+main.show{
+    left: 0;
+}
+
+main p.hot{
+    background: rgb(255, 204, 0);
+    height: 60%;
+    /* color:rgb(255, 204, 0); */
+    color: black;
+    font-family: Arial;
+    font-size: 80px;
+    font-weight: bold;
+    font-style:italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+main div.hot{
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .hot .hota,.hotb,.hotc,.hotd,.hote{
+    width: 19%;
+}
+
+.hota,.hotb,.hotc,.hotd,.hote{
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid rgb(255, 204, 0); */
+    border-radius: 50px;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 0 0 10px black;
+}
+
+.hota:hover{
+    transform: scale(0.9);
+}
+
+.hotb:hover{
+    transform: scale(0.9);
+}
+
+.hotc:hover{
+    transform: scale(0.9);
+}
+
+.hotd:hover{
+    transform: scale(0.9);
+}
+
+.hote:hover{
+    transform: scale(0.9);
+}
+
+div.img1{
+    background-image: url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+
+div.img2{
+    background-image: url(2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+
+div.img3{
+    background-image: url(3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+
+div.img4{
+    background-image: url(4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+
+div.img5{
+    background-image: url(5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+
+div.prod1,div.prod2,div.prod3,div.prod4,div.prod5{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.prod1,div.prod2,div.prod3,div.prod4,div.prod5 p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section.ads{
+    margin-top: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -100%;
+    transition: .5s;
+}
+
+section.ads.show{
+    left: 0;
+}
+
+.ad1{
+    background-image: url(rek1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+}
+
+footer{
+    height: 35vh;
+    border-top: 2px solid rgba(155,155,155,0.3);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 100%;
+    transition: .5s;
+}
+
+footer.show{
+    left: 0;
+}
+
+footer .f1,.f2,.f3,.f4,.f5,.f6{
+    height: 70%;
+    width: 12%;
+}
+
+.f1{
+    position: relative;
+}
+
+.f1 .footerLogo{
+    position: absolute;
+    height: 100px;
+    width: 125px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.f2,.f3{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 70px;
+}
+
+.f2 p, .f3 p{
+    height: 15%;
+}
+
+
+.f4,.f5{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-family: Arial;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 70px;
+}
+
+.f4 p, .f5 p{
+    height: 15%;
+}
+
+
+.f6{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.f6 i{
+    color: black;
+    font-size: 30px;
+}
