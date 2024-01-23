@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="regPanel">
+        <h2>Create your account:</h2>
+        <p>Name:</p>
+        <input type="text" class="name" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+        <p>Surname:</p>
+        <input type="text" class="surname">
+        <p>Age:</p>
+        <input type="number" class="age">
+        <p>E-mail:</p>
+        <input type="email" class="email">
+        <p>Password:</p>
+        <input type="password" class="newPassword">
+        <button class="signUp">Sign up!</button>
+        <button class="toLogIn">I already have an account.</button>
+    </div>
+    <div class="loginPanel">
+        <p>E-Mail:</p>
+        <input type="text" class="login">
+        <p>Password:</p>
+        <input type="password" class="password">
+        <button class="logIn">Log In!</button>
+        <button class="toRegister">Back to signing up.</button>
+    </div>
+    <div class="result" id="1">Please, enter your data.</div>
+    <div class="panel">
+        <h2>User data: </h2>
+        <p class="nameLabel">Name: <span class="nameSpan"></span></p>
+        <p class="surnameLabel">Surname: <span class="surnameSpan"></span></p>
+        <p class="ageLabel">Age: <span class="ageSpan"></span></p>
+        <p class="emailLabel">E-mail: <span class="emailSpan"></span></p>
+        <button class="relog">Log Out</button>
+    </div>
+    <div class="label">© Ernest Czaplewski 2023</div>
+
+
+    <script src="reg.js"></script>
+</body>
+</html>
