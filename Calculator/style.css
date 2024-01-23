@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    background: linear-gradient(180deg, rgba(155,0,155,0.6), rgba(155,0,155,0.2));
+    min-height: 100vh;
+}
+
+div.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 400px;
+    background: rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1px black;
+    align-content: space-around;
+}
+
+div.result{
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+div.text{
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+div.preview{
+    margin-right:10px;
+    font-size: 20px;
+    color: rgba(0,0,0,0.5);
+}
+
+button.equals{
+    background: rgba(125,0,125,0.7);
+    width: 47%;
+}
+
+button.zero{
+    width: 47%;
+}
+
+button{
+    width: 22%;
+    height: 13%;
+    margin: 5px;
+    border: none;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: .1s;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 1px black;
+}
+
+button:hover{
+    background: rgba(125,0,125,0.4);
+    transform: scale(0.9);
+}
+
+button.delete{
+    width: 20%;
+}
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+div.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 400px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: 0 0 2px black;
+    align-content: space-around;
+}
+
+div.result{
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+div.text{
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+div.preview{
+    margin-right:10px;
+    font-size: 20px;
+    color: rgba(0,0,0,0.5);
+}
+
+button.equals{
+    background: rgba(125,0,125,0.7);
+}
+
+button{
+    width: 20%;
+    height: 13%;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: .1s;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 2px black;
+}
+
+button:hover{
+    background: rgba(125,0,125,0.4);
+}
+
+button.delete{
+    width: 88%;
+} */
