@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    box-shadow: 0 0 3px black;
+    border-radius: 10px;
+    background: rgba(0, 149, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    transition: .3s;
+}
+
+div.hot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    box-shadow: 0 0 3px black;
+    border-radius: 10px;
+    background: orangered;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    transition: .3s;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.title{
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+input{
+    background: whitesmoke;
+    color: black;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    border: none;
+    outline: none;
+}
+
+button{
+    background: whitesmoke;
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+button:hover{
+    border: 2px solid black;
+}
+
+span{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+span.emoji{
+    font-size: 40px;
+}
